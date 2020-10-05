@@ -282,11 +282,7 @@
 	//Handles the text strings being added to the actual description.
 	//If they have something that covers the limb, and it is not missing, put flavortext.  If it is covered but bleeding, add other flavortext.
 
-	// ***********************************************************************************
-	// THIS NEEDS TO BE ENTIRELY REWRITTEN. Commenting out for now, BADLY NEEDS REWRITING.
-	// ***********************************************************************************
-
-	/*
+	
 	var/display_chest = 0
 	var/display_shoes = 0
 	var/display_gloves = 0
@@ -337,12 +333,11 @@
 		display_chest = 1
 
 	if(display_chest)
-		msg += "<span class='danger'>[src] [has] blood soaking through from under [his] clothing!</span>\n"
+		msg += "<span class='danger'>[src] [has] blood soaking through [his] clothing!</span>\n"
 	if(display_shoes)
-		msg += "<span class='danger'>[src] [has] blood running from [his] shoes!</span>\n"
+		msg += "<span class='danger'>[src] [has] blood pooling under [his] shoes!</span>\n"
 	if(display_gloves)
-		msg += "<span class='danger'>[src] [has] blood running from under [his] gloves!</span>\n"
-	*/
+		msg += "<span class='danger'>[src] [has] blood soaking through [his] gloves!</span>\n"
 
 	for(var/limb in wound_flavor_text)
 		msg += wound_flavor_text[limb]
